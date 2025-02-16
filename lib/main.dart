@@ -12,46 +12,36 @@ class MyNEW extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          //title: Text("data"),
-      ),
-      body: Row(
-        children: [
-          Icon(
-            size: 70,
-            Iconsax.star1,
-            color: Colors.blue,
-          ),
-          Icon(
-            size: 70,
-            Iconsax.star1,
-            color: Colors.blue,
-          ),
-          Icon(
-            size: 70,
-            Iconsax.star1,
-            color: Colors.blue,
-          ),
-          Icon(
-            size: 70,
-            Iconsax.star1,
-            color: Colors.blue,
-          ),
-          Icon(
-            size: 50,
-            Iconsax.star4,
-            color: Colors.blue,
-          )
-          // Text(
-          //   "This is a",
-          //   style: TextStyle(
-          //     color: Color.amber,
-          //     fontSize: 60,
-          //   ),
-          // )
-        ],
-      ),
-    )
+          appBar: AppBar(
+              title: Text("Lab 05-Flutter"),
+              ),
+          body: Container(
+            height: double.infinity,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Icon(
+                  size: 40,
+                  Iconsax.cloud_lightning,
+                  color: Colors.blue,
+                ),
+                
+                Text(
+                  "This is a",
+                  style: TextStyle(
+                    color: Colors.amber,
+                    fontSize: 30,
+                  ),
+                ),
+                Icon(
+                  size: 40,
+                  Iconsax.cloud,
+                  color: Colors.blue,
+                ),
+              ],
+            ),
+          )),
     );
   }
 }
